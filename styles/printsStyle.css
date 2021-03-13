@@ -601,12 +601,14 @@ select option:checked {
             justify-content: center;
     overflow-y: hidden;
     padding: 0;
+    padding-top: 75px;
   }
   #preview-information {
     margin: 0;
     position: relative;
     width: 30vw;
     margin-left: 100px;
+    margin-bottom: 55px;
   }
   #preview-price {
     margin-bottom: 30px;
