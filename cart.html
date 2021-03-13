@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <base href="./">
+        <title>&mdash; Cart</title>
+        <meta name="theme-color" content="#fcfcfc"/>
+            <meta property="og:title" content="Your Name">
+            <meta property="og:image" content="">
+            <meta property="og:description" content="— art">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="icon" type="image/png" href=""/>
+            <link rel="stylesheet" href="./styles/commonStyle.css">
+            <link rel="stylesheet" href="./styles/contactStyle.css">
+            <link rel="stylesheet" href="./styles/cartStyle.css">
+            <link rel="stylesheet" href="./styles/hamburgers.css" defer>
+        <noscript><style> #content { opacity: 1 !important; } </style></noscript>
+    </head>
+    <body>
+        <div id="content" style="opacity: 0">
+            <div id="header">
+                <div id="list-icon" class="hamburger--spin">
+                    <div class="hamburger-box"><div class="hamburger-inner"></div></div>
+                </div>
+                <a href="./"><div id="name">Your Name</div></a>
+                <div id="list-container">
+                    <div id="list-inner-container">
+                        <a class="menu-item" href="./prints">PRINTS</a>
+                        <a class="menu-item" href="">ABOUT</a>
+                        <a class="menu-item multiline" href=""><span>PROJECT</span><span> NAME</span></a>
+                        <a class="menu-item" href="./contact">CONTACT</a>
+                    </div>
+                    <div id="socials">
+                        <a href="https://instagram.com/macie.k" class="icon"><img src="./resources/img/icons/ig-icon.svg"></a>
+                        <a href="https://facebook.com/" class="icon"><img src="./resources/img/icons/fb-icon.svg"></a>
+                    </div>
+                </div>
+                <a href="./cart.html" id="shopping-cart">
+                    <img src="./resources/img/icons/shopping-cart.svg" class="icon">
+                    <div id="cart-bubble"></div>
+                </a>
+            </div>
+            <div id="container">
+                <div id="cart">
+                    <div id="cart-header">
+                        <div id="cart-header-desc">Description</div>
+                        <div id="cart-header-quantity">Quantity</div>
+                        <div id="cart-header-price">Price</div>
+                    </div>
+                    <div id="cart-items"></div>
+                    <div id="cart-summary">
+                        <div id="cart-summary-text">Order sumary:</div>
+                        <div class="summary-subitem" id="cart-items-container">
+                            <div id="cart-items-text">Items:</div><div id="cart-items-value">Should be price:)</div>
+                        </div>
+                        <div class="summary-subitem" id="cart-shipping-container">
+                            <div id="cart-shipping-text">Shipping:</div>
+                            <div class="flip-arrow-input" id="shipping-select-container">
+                                <select id="shipping-select">
+                                    <option data-price="3" class="shipping-option">Poland &mdash; 3€</option>
+                                    <option data-price="5" class="shipping-option">Europe &mdash; 5€</option>
+                                    <option data-price="7" class="shipping-option">Other &mdash; 7€</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="summary-subitem" id="cart-total-container">
+                            <div id="total-text">Total:</div><div id="total-value"></div>
+                        </div>
+                        <button id="cart-finish-button" class="button" disabled>FINISH ORDER*</button>
+                        <!-- <div id="cart-disclaimer">
+                            *Your order information will be sent to me. 
+                            I’ll contact you about the shipping method & payment as soon as possible.
+                        </div> -->
+                    </div>
+                </div>
+                <div id="order-confirm">
+                    <div id="confirm-inside-box">
+                        <img id="confirm-box-close" src="./resources/img/icons/x.svg">
+                        <p>Your order information will be sent to me.</p>
+                        <p><span class="bold">I’ll contact you</span> about the shipping method & payment as soon as possible.</p>
+                        <form id="confirm-form" action="./scripts/orderMail.php" method="post">
+                            <div class="input-container">
+                                <label>E-mail</label>
+                                <input class="input" type="email" id="form-email" name="email" required="true" data-validate="email">
+                            </div>
+                            <input class="input button" id="confirm-send-button" type="submit" value="CONFIRM" disabled>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/cart.js" type="module" defer></script>
+        <!-- Menu icon by: https://github.com/jonsuh/hamburgers -->
+        <!-- (x) icon by: https://www.flaticon.com/authors/darius-dan -->
+    </body>
+</html>

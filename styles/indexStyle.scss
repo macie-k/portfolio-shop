@@ -1,0 +1,40 @@
+@import 'base';
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 90px);
+    width: 100vw;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -75px;
+    width: 90vw;
+    height: 65vh;
+    max-width: 750px;
+}
+
+#main-img {
+    user-select: none;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media only screen and (min-width: 775px) {
+    #img-container {
+        margin-top: 0;
+    }
+}

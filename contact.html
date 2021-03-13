@@ -1,0 +1,76 @@
+<html lang="en">
+    <head>
+        <base href="./">
+        <title>&mdash; Contact</title>
+        <meta name="theme-color" content="#fcfcfc"/>
+            <meta property="og:title" content="Your Name">
+            <meta property="og:image" content="">
+            <meta property="og:description" content="— art">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="icon" type="image/png" href=""/>
+            <link rel="stylesheet" href="./styles/commonStyle.css">
+            <link rel="stylesheet" href="./styles/contactStyle.css">
+            <link rel="stylesheet" href="./styles/hamburgers.css" defer>
+        <noscript><style> #content { opacity: 1 !important; } </style></noscript>
+    </head>
+    <body>
+        <div id="content" style="opacity: 0">
+            <div id="header">
+                <div id="list-icon" class="hamburger--spin">
+                    <div class="hamburger-box"><div class="hamburger-inner"></div></div>
+                </div>
+                <a href="./"><div id="name">Your Name</div></a>
+                <div id="list-container">
+                    <div id="list-inner-container">
+                        <a class="menu-item" href="./prints">PRINTS</a>
+                        <a class="menu-item" href="">ABOUT</a>
+                        <a class="menu-item multiline" href=""><span>PROJECT</span><span> NAME</span></a>
+                        <a class="menu-item" href="./contact">CONTACT</a>
+                    </div>
+                    <div id="socials">
+                        <a href="https://instagram.com/macie.k" class="icon"><img src="./resources/img/icons/ig-icon.svg"></a>
+                        <a href="https://facebook.com/" class="icon"><img src="./resources/img/icons/fb-icon.svg"></a>
+                    </div>
+                </div>
+                <a href="./cart.html" id="shopping-cart">
+                    <img src="./resources/img/icons/shopping-cart.svg" class="icon">
+                    <div id="cart-bubble"></div>
+                </a>
+            </div>
+            <div id="container">
+                <div id="inner-container">
+                    <div id="info">
+                        <p>Based in Europe, available for commissioned work worldwide.</p>
+                        <p>You can email me ​​at <span id="copy-email">name@domain.com</span> for editorial inquiries, commissioned work, collaborative projects.                    </p>
+                        <p>Or you can use the form.</p>
+                        <div id="socials-bottom">
+                            <a href="https://instagram.com/macie.k" class="icon"><img src="./resources/img/icons/ig-icon.svg"></a>
+                            <a href="https://facebook.com/" class="icon"><img src="./resources/img/icons/fb-icon.svg"></a>
+                        </div>
+                    </div>
+                    <form id="contact-form" action="./scripts/contactMail.php" method="post">
+                        <div class="input-container">
+                            <label>Name</label>
+                            <input class="input" type="text" id="form-name" name="name" required="true" data-min-length="3">
+                        </div>
+                        <div class="input-container">
+                            <label>E-mail</label>
+                            <input class="input" type="email" id="form-email" name="email" required="true" data-validate="email">
+                        </div>
+                        <div class="input-container">
+                            <label>Topic</label>
+                            <input class="input" id="form-topic" name="topic" required="true" data-min-length="5">
+                        </div>
+                        <div class="input-container">
+                            <label>Message</label>
+                            <textarea class="input" type="text" id="form-message" name="message" required="true" data-min-length="20"></textarea>
+                        </div>
+                        <input class="input" type="submit" value="Send" disabled>
+                    </form>  
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/contact.js" type="module" defer></script>
+        <!-- Menu icon by: https://github.com/jonsuh/hamburgers -->
+    </body>
+</html>

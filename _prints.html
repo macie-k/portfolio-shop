@@ -1,0 +1,88 @@
+<html lang="en">
+    <head>
+        <base href="/portfolio-shop/">
+        <title>&mdash; Prints</title>
+        <meta name="theme-color" content="#fcfcfc"/>
+            <meta property="og:title" content="Your Name">
+            <meta property="og:image" content="">
+            <meta property="og:description" content="— art">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="icon" type="image/png" href=""/>
+            <link rel="stylesheet" href="styles/commonStyle.css">
+            <link rel="stylesheet" href="styles/printsStyle.css">
+            <link rel="stylesheet" href="styles/hamburgers.css" defer>
+        <noscript><style> #content { opacity: 1 !important; } </style></noscript>
+    </head>
+    <body>
+        <div id="content">
+            <div id="header">
+                <div id="list-icon" class="hamburger--spin">
+                    <div class="hamburger-box"><div class="hamburger-inner"></div></div>
+                </div>
+                <a href="./"><div id="name">Your Name</div></a>
+                <div id="list-container">
+                    <div id="list-inner-container">
+                        <a class="menu-item" href="./prints">PRINTS</a>
+                        <a class="menu-item" href="">ABOUT</a>
+                        <a class="menu-item multiline" href=""><span>PROJECT</span><span> NAME</span></a>
+                        <a class="menu-item" href="./contact">CONTACT</a>
+                    </div>
+                    <div id="socials">
+                        <a href="https://instagram.com/macie.k" class="icon"><img src="resources/img/icons/ig-icon.svg"></a>
+                        <a href="https://facebook.com/" class="icon"><img src="resources/img/icons/fb-icon.svg"></a>
+                    </div>
+                </div>
+                <a href="cart.html" id="shopping-cart">
+                    <img src="resources/img/icons/shopping-cart.svg" class="icon">
+                    <div id="cart-bubble"></div>
+                </a>
+            </div>
+            <div id="container">
+                <div id="preview-container">
+                    <div id="preview-spacer"></div>
+                    <p id="preview-title-mobile" class="preview-title">Sample title</p>
+                    <div id="preview-img-container">
+                        <div id="preview-back">
+                            <img src="resources/img/icons/left-arrow.svg">
+                            <span>Go back</span>
+                        </div>
+                        <img id="preview-img" src="">
+                        <div id="thumbnail-container">
+                            <!-- <div class="thumbnail-photo active"><img src=""></div> -->
+                        </div>
+                    </div>
+                    <div id="preview-information">
+                        <p id="preview-title-pc" class="preview-title">Sample title</p>
+                        <div id="preview-details">
+                            <span id="preview-price">Price:<span id="preview-price-value">Something's not working:)</span></span>
+                            <span id="quantity-text">Quantity</span>
+                            <div id="quantity-container">
+                                <div class="change-quantity bounce" id="quantity-">&ndash;</div>
+                                <input id="quantity" type="number" value="1">
+                                <div class="change-quantity bounce" id="quantity+">+</div>
+                            </div>
+                        </div>
+                        <div class="flip-arrow-input" id="preview-size-container">
+                            <select id="preview-size">
+                                <option class="size-option" data-price="25">21x30 cm &nbsp;&nbsp;(8.3x11.7 in)</option>
+                                <option class="size-option" data-price="13">10x15 cm &nbsp;&nbsp;(4.1x5.8 in)</option>
+                            </select>
+                        </div>
+                        <button id="add-button" class="bounce">ADD TO CART</button>
+                    </div>
+                </div>
+                <div id="images">
+                    <div class="column" id="column-1"></div>
+                    <div class="column" id="column-2"></div>
+                    <div class="column" id="column-3">
+                        <div class="sub-column" id="column-3-1"></div>
+                        <div class="sub-column" id="column-3-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/prints.js" type="module" defer></script>
+        <!-- Arrow icon by: https://www.flaticon.com/authors/smashicons -->
+        <!-- Menu icon by: https://github.com/jonsuh/hamburgers -->
+    </body>
+</html>

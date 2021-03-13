@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap");
+@font-face {
+  font-family: 'Pinyon Script';
+  src: url("../resources/fonts/PinyonScript-Regular.ttf");
+}
+
+/* fonts */
+/* colors */
+#inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#info {
+  font-size: 17;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100vw;
+  max-width: 500px;
+  padding: 10vw;
+  color: #0f0f0f;
+}
+
+#info > p {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  margin: 10px 0;
+}
+
+#info > p > #copy-email {
+  text-align: center;
+  color: #0f0f0f;
+  display: inline-block;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  background-color: #f0f0f0;
+  padding: 1px 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#info > p > #copy-email.fade-out {
+  color: #f0f0f0;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+}
+
+#info > :last-child {
+  margin-top: 40px;
+}
+
+#contact-form {
+  padding-bottom: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-form > * {
+  -webkit-transition: border .5s ease-in-out;
+  transition: border .5s ease-in-out;
+}
+
+#contact-form input[type=submit] {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid #fcfcfc;
+  border-radius: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #fcfcfc;
+  background-color: #0f0f0f;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.25);
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: .4;
+  height: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 50vw;
+}
+
+#contact-form input[type=submit]:focus {
+  outline: 0;
+  border: none;
+}
+
+#contact-form input[type=submit]:active {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#contact-form input[type=submit]:not(:disabled) {
+  opacity: .95;
+}
+
+#contact-form input[type=submit]:not(:disabled):hover {
+  -webkit-box-shadow: 0.2rem 0.3rem 2rem -10px rgba(0, 0, 0, 0.596);
+          box-shadow: 0.2rem 0.3rem 2rem -10px rgba(0, 0, 0, 0.596);
+  opacity: 1;
+  cursor: pointer;
+  color: #0f0f0f;
+  background-color: #fcfcfc;
+}
+
+.input-container {
+  height: 40px;
+  width: 70vw;
+  position: relative;
+  padding: 5px 10px;
+  margin: 10px;
+  border: 1px solid #C0C6CC;
+  border-radius: 5px;
+  -webkit-transition: border-color .5s ease-in-out;
+  transition: border-color .5s ease-in-out;
+}
+
+.input-container:focus-within {
+  border-color: #757575;
+}
+
+.input-container:focus-within > label {
+  color: #757575;
+}
+
+.input-container.invalid {
+  border-color: red;
+  -webkit-transition: border-color .5s ease-in-out;
+  transition: border-color .5s ease-in-out;
+}
+
+.input-container.invalid > label {
+  color: red;
+}
+
+.input-container > label {
+  font-family: "Poppins", sans-serif;
+  color: #909090;
+  padding: 0 5px;
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  background-color: #fcfcfc;
+  -webkit-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+}
+
+.input-container > :last-child {
+  font-size: 15px;
+  color: #757575;
+  width: calc(100% - 20px);
+  position: absolute;
+  left: 10px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-container:nth-last-child(2) {
+  height: 30vh;
+}
+
+.input-container:nth-last-child(2) > textarea {
+  top: 10px;
+  height: calc(30vh - 20px);
+  resize: none;
+}
+
+.input-container:nth-last-child(2) > textarea::-webkit-scrollbar {
+  display: none;
+}
+
+#tmp-email-copier {
+  z-index: -1;
+  position: absolute;
+  width: 0px;
+}
+
+/* desktop */
+@media only screen and (min-width: 775px) {
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(100vh - 100px);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #inner-container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  #info {
+    padding: 0;
+    text-align: left;
+    max-width: 400px;
+    width: 30vw;
+    margin-right: 5vw;
+  }
+  .input-container {
+    width: 350px;
+  }
+  input[type=submit] {
+    width: 150px !important;
+  }
+}
+
+/* wide desktop */
+/*# sourceMappingURL=contactStyle.css.map */
